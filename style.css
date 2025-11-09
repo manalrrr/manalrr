@@ -31,7 +31,7 @@ body {
 
 .signup-form label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   font-weight: 600;
   color: #555;
   font-size: 14px;
@@ -52,7 +52,7 @@ body {
 .signup-form input[type="text"]:focus,
 .signup-form input[type="email"]:focus,
 .signup-form input[type="password"]:focus {
-  border-color: #3366ff;
+  border-color: #2a56db;
   outline: none;
 }
 
@@ -70,7 +70,7 @@ body {
   border: none;
   border-radius: 5px;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -79,3 +79,15 @@ body {
 .signup-form button:hover {
   background-color: #254eda;
 }
+.signup-form button:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}
+
+.signup-form h2 {
+  position: relative;
+  animation: slideInTitle 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
